@@ -21,7 +21,7 @@ messages are JSON.
 
 ## Documentation ##
 
-The Javadocs can be found at [http://code.rapportive.com/storm-amqp-spout]().
+The Javadocs can be found at [https://decoit.github.io/storm-amqp-spout/apidocs/index.html]().
 
 ## Usage ##
 
