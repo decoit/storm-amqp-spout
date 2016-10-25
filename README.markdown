@@ -21,7 +21,7 @@ messages are JSON.
 
 ## Documentation ##
 
-The Javadocs can be found at [https://decoit.github.io/storm-amqp-spout/apidocs/index.html]().
+The Javadocs can be found at [here](https://decoit.github.io/storm-amqp-spout/apidocs/index.html).
 
 ## Usage ##
 
@@ -86,13 +86,13 @@ versions and other AMQP brokers.
     "Javadoc for backtype.storm.topology.IRichSpout"
 [Scheme]: <http://nathanmarz.github.com/storm/doc/backtype/storm/spout/Scheme.html>
     "Javadoc for backtype.storm.spout.Scheme"
-[AMQPSpout]: <http://code.rapportive.com/storm-amqp-spout/doc/com/rapportive/storm/spout/AMQPSpout.html>
+[AMQPSpout]: <https://decoit.github.io/storm-amqp-spout/apidocs/com/rapportive/storm/spout/AMQPSpout.html>
     "Javadoc for AMQPSpout"
-[QueueDeclaration]: <http://code.rapportive.com/storm-amqp-spout/doc/com/rapportive/storm/amqp/QueueDeclaration.html>
+[QueueDeclaration]: <https://decoit.github.io/storm-amqp-spout/apidocs/com/rapportive/storm/amqp/QueueDeclaration.html>
     "Javadoc for QueueDeclaration"
-[ExclusiveQueueWithBinding]: <http://code.rapportive.com/storm-amqp-spout/doc/com/rapportive/storm/amqp/ExclusiveQueueWithBinding.html>
+[ExclusiveQueueWithBinding]: <https://decoit.github.io/storm-amqp-spout/apidocs/com/rapportive/storm/amqp/ExclusiveQueueWithBinding.html>
     "Javadoc for ExclusiveQueueWithBinding"
-[SharedQueueWithBinding]: <http://code.rapportive.com/storm-amqp-spout/doc/com/rapportive/storm/amqp/SharedQueueWithBinding.html>
+[SharedQueueWithBinding]: <https://decoit.github.io/storm-amqp-spout/apidocs/com/rapportive/storm/amqp/SharedQueueWithBinding.html>
     "Javadoc for SharedQueueWithBinding"
 [storm-json]: <https://github.com/rapportive-oss/storm-json>
     "JSON {,de}serialisation support for Storm"
