@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.clojars.storm-amqp</groupId>
+    <groupId>de.decoit.storm</groupId>
     <artifactId>storm-amqp-spout</artifactId>
-    <version>0.2.7-SNAPSHOT</version>
+    <version>0.3-SNAPSHOT</version>
 
     <name>Storm AMQP Spout</name>
     <description>AMQP input source for Storm</description>
-	<url>http://github.com/storm-amqp/storm-amqp-spout</url>
+    <url>https://github.com/decoit/storm-amqp-spout</url>
 
     <developers>
         <developer>
@@ -17,7 +17,12 @@
         <developer>
             <name>Brenden Matthews</name>
             <email>brenden@diddyinc.com</email>
-			<url>http://diddyinc.com/</url>
+            <url>http://diddyinc.com/</url>
+        </developer>
+        <developer>
+            <name>Thomas Rix</name>
+            <email>rix@decoit.de</email>
+            <url>http://www.decoit.de/</url>
         </developer>
     </developers>
 
@@ -29,56 +34,52 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git@github.com:storm-amqp/storm-amqp-spout.git</connection>
-        <url>http://github.com/storm-amqp/storm-amqp-spout</url>
-        <developerConnection>scm:git:git@github.com:storm-amqp/storm-amqp-spout.git</developerConnection>
+        <connection>scm:git:git@github.com:decoit/storm-amqp-spout.git</connection>
+        <url>https://github.com/decoit/storm-amqp-spout</url>
+        <developerConnection>scm:git:git@github.com:decoit/storm-amqp-spout.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
-    <distributionManagement>
+    <!--    <distributionManagement>
         <repository>
             <id>clojars</id>
             <name>Clojars repository</name>
             <url>https://clojars.org/repo</url>
         </repository>
-    </distributionManagement>
+    </distributionManagement>-->
 
-    <repositories>
+    <!--    <repositories>
         <repository>
             <id>clojars</id>
             <url>http://clojars.org/repo</url>
         </repository>
-    </repositories>
+    </repositories>-->
 
     <dependencies>
         <dependency>
-            <groupId>storm</groupId>
-            <artifactId>storm</artifactId>
-            <version>0.8.2</version>
+            <groupId>org.apache.storm</groupId>
+            <artifactId>storm-core</artifactId>
+            <version>1.0.2</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.rabbitmq</groupId>
             <artifactId>amqp-client</artifactId>
-            <version>3.1.4</version>
-        </dependency>
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.16</version>
+            <version>3.6.5</version>
         </dependency>
     </dependencies>
+    
     <build>
-		<plugins>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
-				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-				</configuration>
-			</plugin>
+        <plugins>
             <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+            <!--            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>2.9</version>
@@ -92,7 +93,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.4</version>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 </project>
